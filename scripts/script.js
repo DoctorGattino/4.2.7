@@ -60,9 +60,9 @@ function getUsersInformation(reposit) {
   let usersName = document.createElement("div");
   usersName.textContent = `Name: ${repData.name}`;
   let usersOwner = document.createElement("div");
-  usersOwner.textContent = `Owner: ${reposit.owner.login}`;
+  usersOwner.textContent = `Owner: ${repData.owner}`;
   let usersStars = document.createElement("div");
-  usersStars.textContent = `Stars: ${reposit.stargazers_count}`;
+  usersStars.textContent = `Stars: ${repData.stars}`;
 
   let btn = createButton(usersInfo);
   usersInfo.appendChild(usersName);
