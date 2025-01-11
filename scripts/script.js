@@ -53,16 +53,16 @@ function getUsersInformation(reposit) {
   let usersInfo = document.createElement("li");
   let repData = {
     name: reposit.name,
-    owner: reposit.owner_login,
-    stars: reposit.stars_count,
+    owner: reposit.owner.login,
+    stars: reposit.stargazers_count,
   };
 
   let usersName = document.createElement("div");
   usersName.textContent = `Name: ${repData.name}`;
   let usersOwner = document.createElement("div");
-  usersOwner.textContent = `Owner: ${repData.owner_login}`;
+  usersOwner.textContent = `Owner: ${reposit.owner.login}`;
   let usersStars = document.createElement("div");
-  usersStars.textContent = `Stars: ${repData.stars_count}`;
+  usersStars.textContent = `Stars: ${reposit.stargazers_count}`;
 
   let btn = createButton(usersInfo);
   usersInfo.appendChild(usersName);
