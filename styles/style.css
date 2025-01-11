@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: Roboto;
+  font-weight: 400;
+  min-width: 320px;
+  color: black;
+}
+
+.container {
+  width: 661px;
+  height: 763px;
+  background-color: #c4c4c4;
+  margin: 50px auto 0 auto;
+}
+
+.container__title {
+  padding: 40px 150px 0;
+}
+
+.container__input {
+  width: 500px;
+  height: 61px;
+  background-color: #ffffff;
+  margin: 20px 84px 0 77px;
+  font-size: 48px;
+  line-height: 56.25px;
+  padding: 0 13px 0 13px;
+  border: none;
+  outline: none;
+}
+
+.container__autocomplete {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container__autocomplete li {
+  width: 497px;
+  height: 44px;
+  background-color: #e3e3e3;
+  border: 2px solid black;
+  font-size: 30px;
+  line-height: 35.16px;
+  padding: 0 13px 9px 13px;
+  margin: 0 84px 0 37px;
+  list-style: none;
+}
+
+.container__autocomplete li:hover {
+  background-color: #65cdf9;
+}
+
+.container__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0 auto 60px;
+  padding: 0;
+  padding-left: 20px;
+  width: 83%;
+  list-style: none;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.container__card li {
+  padding: 8px 0 8px 13px;
+  position: relative;
+  border: 2px solid #000;
+  background-color: #e27beb;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.close_btn {
+  border: none;
+  padding: 0 0;
+  background-color: #e27beb;
+  width: 46px;
+  height: 42px;
+  position: absolute;
+  right: 34px;
+  top: 25%;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='46' height='42' fill='none'%3e%3cpath stroke='red' stroke-width='4' d='M2 40.5 44 2 M44 40.5 2 2'/%3e%3c/svg%3e ");
+}

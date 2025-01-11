@@ -4,8 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4.2.7</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/debounce.js" defer></script>
+    <script src="scripts/script.js" defer></script>
   </head>
   <body>
-    <ul></ul>
+    <main class="container">
+      <h1 class="container__title">Search users repositories</h1>
+      <input type="text" placeholder="Enter..." class="container__input" />
+      <ul class="container__autocomplete"></ul>
+      <ul class="container__card"></ul>
+    </main>
   </body>
 </html>
